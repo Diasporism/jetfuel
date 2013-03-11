@@ -1,0 +1,8 @@
+.idea
+.DS_Store
+coverage/
+*.sqlite
+.database.log
+development.sqlite
+production.sqlite
+test.sqlite
