@@ -2,7 +2,7 @@
 .DS_Store
 coverage/
 *.sqlite
-.database.log
+database.log
 development.sqlite
 production.sqlite
 test.sqlite
