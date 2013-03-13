@@ -8,6 +8,8 @@ module JetFuel
 
     set :database, ENV['DATABASE_URL']
 
+    @requests = Request.count_all
+
     get '/' do
       haml :index
     end
@@ -21,7 +23,13 @@ module JetFuel
         end
         @url = Url.create(long_url: params[:url], short_url: short_url)
       end
+      Request.create(url: params[:url])
       haml :url
+    end
+
+    get '/redirect/:short_url' do
+      url = Url.find_by_short_url(params[:short_url])
+      redirect "http://#{url.long_url}"
     end
 
   end

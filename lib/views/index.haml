@@ -1,3 +1,6 @@
 %form{ :action => '/url', :method => 'post'}
   %label{:for => 'url'} URL:
   %input{:type => 'text', :name => 'url'}
+%h1 Top Requests:
+- @requests.each do |r|
+  %p= puts r

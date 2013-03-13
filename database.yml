@@ -5,5 +5,5 @@ test:
   adapter: sqlite3
   database: test.sqlite
 production:
-  adapter: sqlite3
-  database: production.sqlite
+  adapter: postgresql
+  database: production.postgres
