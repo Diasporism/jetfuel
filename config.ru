@@ -1,4 +1,3 @@
-$LOAD_PATH.push File.dirname(__FILE__)
-
-require 'server'
+$LOAD_PATH << File.expand_path("lib")
+require 'jet_fuel'
 run JetFuel::Server

@@ -1,7 +1,6 @@
 require './lib/jet_fuel'
 
 require 'rspec'
-require 'rspec/core/rake_task'
 require 'rspec/pride'
 require 'simplecov'
 SimpleCov.start

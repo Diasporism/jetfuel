@@ -8,6 +8,5 @@ gem 'rspec'
 gem 'rspec-pride'
 gem 'shotgun'
 gem 'sinatra'
-
-#group :development do
-#end
+gem 'sinatra-activerecord'
+gem 'haml'
