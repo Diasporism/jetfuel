@@ -62,7 +62,6 @@ module JetFuel
         username = params[:username]
         User.create(username: username, password: password)
         @user = User.find_by_username_and_password(username, password)
-        user = session[:user_id]
         @vanities = PrivateUrl.vanities_for_user(@user[:id])
         haml :user
       end
