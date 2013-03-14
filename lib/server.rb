@@ -1,5 +1,3 @@
-require 'jet_fuel'
-
 ENV['DATABASE_URL'] ||= "sqlite3:///db/database.sqlite"
 
 module JetFuel
@@ -82,7 +80,7 @@ module JetFuel
 
 
     def current_user
-      
+
     end
 
   end
