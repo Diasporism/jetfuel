@@ -1,0 +1,17 @@
+-{:user_id => @user[:id]}
+
+%h1= "Hello, #{@user[:username]}"
+
+%form{ :action => '/user/url', :method => 'post'}
+  %label{:for => 'vanity_url'} Vanity URL:
+  %input{:type => 'text', :name => 'vanity_url'}
+  %label{:for => 'url'} URL:
+  %input{:type => 'text', :name => 'url'}
+
+  %input{:type => 'submit', :value => 'Shorten', :name => 'shorten'}
+
+
+%h1 Your Vanity Tags:
+- unless @vanities.nil?
+  -@vanities.each do |v|
+    %p="#{v}"

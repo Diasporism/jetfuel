@@ -1,2 +1,10 @@
 %h1 "#{@url.long_url}"
 %a(title='Short URL: ' href="/redirect/#{@url.short_url}") #{@url.short_url}
+%h1 Top Requests:
+- unless @popular.nil?
+  -@popular.each do |r|
+    %p="#{r[0]} has been requested #{r[1]} time(s)"
+%h1 Most Recent Requests:
+- unless @recent.nil?
+  -@recent.each do |r|
+    %p="#{r[:url]} was requested at #{r[:created_at]}"

@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 gem 'activerecord'
 gem 'haml'
-gem 'pg'
 gem 'rake'
 gem 'rspec'
 gem 'rspec-pride'

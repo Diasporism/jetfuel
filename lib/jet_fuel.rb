@@ -10,4 +10,6 @@ require 'yaml'
 
 require 'models/requests'
 require 'models/url'
+require 'models/user'
+require 'models/private_url'
 require 'server'

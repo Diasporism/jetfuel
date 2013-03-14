@@ -1,0 +1,3 @@
+%h1= "#{@url.long_url}"
+%h2= "#{@url.vanity_url}"
+%a(title='Short URL: ' href="/redirect/#{@url.short_url}") #{@url.short_url}

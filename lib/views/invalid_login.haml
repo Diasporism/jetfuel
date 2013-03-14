@@ -5,6 +5,8 @@
 %form{ :action => '/register', :method => 'get'}
   %input{:type => 'submit', :value => 'Register', :name => 'register'}
 
+%h2 Invalid Login
+
 %form{ :action => '/login', :method => 'get'}
   %label{:for => 'username'} Username:
   %input{:type => 'text', :name => 'username'}
@@ -12,7 +14,7 @@
   %label{:for => 'password'} Password:
   %input{:type => 'password', :name => 'password'}
 
-  %input{:type => 'submit', :value => 'Login', :name => 'login'}
+  %input{:type => 'submit', :name => 'login'}
 
 %h1 Top Requests:
 - unless @popular.nil?
